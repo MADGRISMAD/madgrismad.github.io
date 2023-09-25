@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Presentación Sensores Ultrasónicos</title>
+</head>
+<body>
+
+<div id="presentation">
+    <!-- Diapositiva 1: Introducción -->
+    <div class="slide" id="slide1">
+        <h1>Introducción a los Sensores Ultrasónicos</h1>
+        <p>Los sensores ultrasónicos son dispositivos electrónicos que emiten y reciben ondas ultrasónicas. Utilizados para detectar la presencia, distancia, y movimiento de objetos. Se basan en el principio del eco: envían una señal y miden el tiempo que tarda en regresar después de rebotar en un objeto.</p>
+    </div>
+
+    <!-- Diapositiva 2: Especificaciones -->
+    <div class="slide" id="slide2">
+        <h1>Especificaciones Técnicas</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Parámetro</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Rango de medición</td>
+                    <td>2 cm - 400 cm</td>
+                </tr>
+                <tr>
+                    <td>Frecuencia</td>
+                    <td>40 kHz</td>
+                </tr>
+                <tr>
+                    <td>Voltaje de operación</td>
+                    <td>5V DC</td>
+                </tr>
+                <tr>
+                    <td>Consumo de corriente</td>
+                    <td>15 mA</td>
+                </tr>
+                <tr>
+                    <td>Ángulo de detección</td>
+                    <td>15 grados</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- Diapositiva 3: Características -->
+    <div class="slide" id="slide3">
+        <h1>Características Principales</h1>
+        <p>Alta precisión en la detección y medición. Funcionan en condiciones de iluminación variables, incluida la oscuridad total. Insensibles a color y transparencia de los objetos. Bajo consumo de energía. Resistencia a interferencias de luz externa y otros sensores.</p>
+    </div>
+
+    <!-- Diapositiva 4: Aplicaciones -->
+    <div class="slide" id="slide4">
+        <h1>Aplicaciones de los Sensores Ultrasónicos</h1>
+        <p>Robótica: evitar obstáculos y navegación autónoma. Automóviles: sistemas de estacionamiento asistido. Industria: medición de niveles de líquidos y sólidos en tanques. Electrónica de consumo: juguetes, aspiradoras robotizadas. Medicina: imágenes de ultrasonido y limpieza dental.</p>
+    </div>
+
+    <!-- Diapositiva 5: Conexión -->
+    <div class="slide" id="slide5">
+        <h1>Conexión y Uso</h1>
+        <p>Los sensores ultrasónicos suelen tener al menos 4 pines: VCC, GND, Trig (Disparador) y Echo (Respuesta). Conectar VCC a la fuente de alimentación y GND a tierra. El pin "Trig" se utiliza para iniciar la transmisión de ultrasonidos. El pin "Echo" proporciona un pulso cuya duración es proporcional a la distancia medida. Se pueden integrar fácilmente con microcontroladores y placas como Arduino para diversas aplicaciones.</p>
+    </div>
+
+    <button id="previousSlide">Anterior</button>
+    <button id="nextSlide">Siguiente</button>
+    <button id="resetSlide">Reiniciar</button>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/script.js"></script>
+
+</body>
+</html>
